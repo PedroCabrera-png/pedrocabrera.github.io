@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Cabrera | Portafolio</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0d0d1a, #121227, #1a1333);
+      color: #f0f0f0;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      color: #00ffe0;
+      text-shadow: 0 0 12px rgba(0,255,224,0.5);
+      transition: 0.3s;
+    }
+
+    header h1:hover {
+      text-shadow: 0 0 25px rgba(0,255,224,0.9);
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+      font-family: 'Playfair Display', serif;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 850px;
+      margin: 50px auto;
+      padding: 0 25px;
+    }
+
+    h2 {
+      color: #00ffe0;
+      margin-bottom: 15px;
+      border-left: 4px solid #00ffe0;
+      padding-left: 10px;
+      font-weight: 600;
+      text-shadow: 0 0 10px rgba(0,255,224,0.5);
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(0,255,224,0.1);
+      padding: 25px;
+      border-radius: 14px;
+      margin-top: 15px;
+      box-shadow: 0 0 15px rgba(0,255,224,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0,255,224,0.15);
+    }
+
+    ul { list-style: none; }
+    ul li { margin: 10px 0; }
+
+    a {
+      color: #00ffe0;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a:hover {
+      color: #7fffd4;
+      text-shadow: 0 0 8px rgba(0,255,224,0.6);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+
+    footer p span {
+      color: #00ffe0;
+    }
+
+    /* Animación de fondo suave */
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    body {
+      background: linear-gradient(-45deg, #0d0d1a, #131c35, #1a1333, #102030);
+      background-size: 300% 300%;
+      animation: gradientMove 15s ease infinite;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.1em; }
+      section { padding: 0 15px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Pedro Cabrera</h1>
+    <p>“Creciendo entre palabras, código e imaginación.”</p>
+  </header>
+
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <div class="card">
+      <p>
+        Soy un creador autodidacta apasionado por unir la lógica de la programación con la emoción de la escritura.
+        He desarrollado proyectos personales como un bot para la plataforma Highrise y dos historias originales en Wattpad.
+        Utilizo herramientas de inteligencia artificial como ChatGPT Premium para aprender, escribir y crear proyectos personales.
+        Busco seguir creciendo a través de tareas creativas, técnicas y humanas.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <div class="card">
+      <ul>
+        <li>✍️ Redacción creativa y corrección de texto</li>
+        <li>🌐 Traducción EN↔ES</li>
+        <li>💻 Aprendizaje autodidacta de programación</li>
+        <li>🤖 Automatización básica y desarrollo de bots</li>
+        <li>🧠 Aplicación de inteligencia artificial (ChatGPT, DALL·E)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="card">
+      <h3>🤖 Bot de Highrise</h3>
+      <p>Desarrollo de bot con funciones de automatización y respuestas personalizadas para la comunidad. 
+      <em>(Proyecto personal autodidacta)</em></p>
+
+      <h3>📖 Historias en Wattpad</h3>
+      <ul>
+        <li><a href="https://www.wattpad.com/story/103948215-nuevo-comienzo" target="_blank">Historia 1 — Nuevo Comienzo</a></li>
+        <li><a href="https://www.wattpad.com/story/141571590-vegetto-el-guerrero-multidimensional" target="_blank">Historia 2 — Vegetto el guerrero multidimensional</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <div class="card">
+      <p>📧 Email: pedrocabrera487@gmail.com</p>
+      <p>🌍 Disponible para microproyectos y colaboraciones.</p>
+      <p><a href="https://github.com/PedroCabrera-png" target="_blank">🤖 Github</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 <span>Pedro Cabrera</span> — Creando con palabras, código e imaginación.</p>
+  </footer>
+
+</body>
+</html>
